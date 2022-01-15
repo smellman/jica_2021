@@ -1,5 +1,8 @@
 # JICA Seminer 2021
 
+- [Presentation PPTX file](https://www.dropbox.com/s/vymgg0plkk3iw7f/JICA2022-01-17.pptx)
+- [PDF version](https://www.dropbox.com/s/z9pinekebldcpe6/JICA2022-01-17.pdf)
+
 ## Links
 
 - [Global Map Sri Lanka 1.0](https://github.com/globalmaps/gmlk10)
