@@ -1,0 +1,21 @@
+{
+  "options": {
+    "paths": {
+      "root": "",
+      "fonts": "fonts",
+      "sprites": "sprites",
+      "styles": "styles",
+      "mbtiles": "data"
+    }
+  },
+  "styles": {
+    "globalmap": {
+      "style": "globalmap.json"
+    }
+  },
+  "data": {
+    "lka": {
+      "mbtiles": "lka.mbtiles"
+    }
+  }
+}
