@@ -34,3 +34,9 @@ docker run helloworld
 tippecanoe -o lka.mbtiles -L airp:airp_lka.geojson -L builtupp:builtupp_lka.geojson -L coastl:coastl_lka.geojson -L inwatera:inwatera_lka.geojson -L polbnda:polbnda_lka.geojson -L polbndl:polbndl_lka.geojson -L raill:raill_lka.geojson -L riverl:riverl_lka.geojson -L roadl:roadl_lka.geojson
 # start Tileserver GL
 docker run --rm -it -v $(pwd):/data -p 8090:80 maptiler/tileserver-gl -p 80
+# charites
+mkdir work
+cd work
+cp ~/Downloads/global_map_style.json style.json
+charites convert style.json
+charites serve style.yml
