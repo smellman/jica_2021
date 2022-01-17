@@ -1,0 +1,33 @@
+# install software
+su –
+apt update
+apt install git
+apt install docker.io
+apt install p7zip-full
+apt install build-essential libsqlite3-dev zlib1g-dev
+git clone https://github.com/mapbox/tippecanoe.git
+cd tippecanoe
+make
+make install
+cd ~
+apt install curl
+curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+apt install nodejs
+npm install -g @unvt/charites
+dpkg -i /home/btm/Downloads/code_1.63.2-1639562499_amd64.deb
+apt install gnupg software-properties-common
+wget -qO - https://qgis.org/downloads/qgis-2021.gpg.key | gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+add-apt-repository "deb https://qgis.org/ubuntu $(lsb_release -c -s) main"
+apt update
+apt install qgis qgis-plugin-grass
+git clone https://github.com/mapbox/mbutil.git
+cd mbutil
+python3 setup.py install
+# Setup docker
+su –
+nano /etc/resolv.conf
+usermod –aG docker (your login name)
+reboot
+docker run helloworld
+# 
