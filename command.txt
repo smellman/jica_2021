@@ -30,4 +30,7 @@ nano /etc/resolv.conf
 usermod –aG docker (your login name)
 reboot
 docker run helloworld
-# 
+# tippecanoe
+tippecanoe -o lka.mbtiles -L airp:airp_lka.geojson -L builtupp:builtupp_lka.geojson -L coastl:coastl_lka.geojson -L inwatera:inwatera_lka.geojson -L polbnda:polbnda_lka.geojson -L polbndl:polbndl_lka.geojson -L raill:raill_lka.geojson -L riverl:riverl_lka.geojson -L roadl:roadl_lka.geojson
+# start Tileserver GL
+docker run --rm -it -v $(pwd):/data -p 8090:80 maptiler/tileserver-gl -p 80
